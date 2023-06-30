@@ -1,0 +1,41 @@
+img{
+    margin-left: 45px;
+}
+
+.colorStyle{
+    color: white;
+}
+
+.svgSize{
+    font-size: 18px;
+}
+
+.nav-link{
+    position: relative;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after{
+    transform: scaleX(1);
+    background-color: white;
+}

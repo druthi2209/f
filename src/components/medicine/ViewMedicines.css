@@ -1,0 +1,50 @@
+#qmedicineTitle {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#medicines {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    margin-right: 55px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+#medicine {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 30px;
+    margin-right: 130px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#medicine:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.addToCartButton {
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.addToCartButton:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+}
